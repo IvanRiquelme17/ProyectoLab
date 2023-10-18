@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+</head>
+
+<body>
+    <h2>Filtrar paciente por:</h2>
+    <form action='/busqueda' method="post">
+        <label for="select">Selecciona el criterio de búsqueda:</label><br>
+        <select name="select" id="select">
+            <option value="nombre">Nombre</option>
+            <option value="apellido">Apellido</option>
+            <option value="dni">DNI</option>
+            <option value="email">Correo Electrónico</option>
+        </select><br>
+
+        <label for="valor">Valor de búsqueda:</label><br>
+        <input type="text" name="valor" id="valor"><br>
+
+        <input type="submit" value="Buscar">
+    </form>
+
+</body>
+<script src="aplicacion.js"></script>
+
+</html>
